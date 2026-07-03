@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hugo's Maths Academy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-card">
+      <p class="eyebrow">KS2 Maths Mission Course</p>
+      <h1>Hugo's Maths Academy</h1>
+      <p class="subtitle">Build confidence, earn XP, unlock badges, and master Key Stage 2 maths one mission at a time.</p>
+      <button onclick="startCourse()">Start Mission</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="stats">
+      <div><strong id="xp">0</strong><span>XP</span></div>
+      <div><strong id="level">1</strong><span>Level</span></div>
+      <div><strong id="badges">0</strong><span>Badges</span></div>
+    </section>
+
+    <section>
+      <h2>Choose a Maths World</h2>
+      <div id="worlds" class="world-grid"></div>
+    </section>
+
+    <section id="lesson" class="lesson hidden">
+      <button class="back" onclick="showHome()">← Back to worlds</button>
+      <h2 id="lessonTitle"></h2>
+      <p id="lessonIntro"></p>
+      <div class="question-card">
+        <p id="question"></p>
+        <div id="answers" class="answers"></div>
+        <p id="feedback"></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
